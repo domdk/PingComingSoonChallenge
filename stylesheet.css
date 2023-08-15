@@ -77,30 +77,31 @@ select {
 
 body {
     font-family: 'Libre Franklin', sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    place-content: center;
+
 }
 
 .container {
-    width: 50%;
-    margin: 50px auto;
+    width: 1240px;
+    height: fit-content;
+    margin: 0 auto;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
 
 .logo {
     width: 100px;
-    margin: 0 auto;
-    text-align: center;
+    margin: 50px auto;
 }
 
 
 h1 {
     margin-top: 2rem;
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 300;
     color: hsl(0, 0%, 59%);
 
@@ -111,40 +112,62 @@ span {
     color: hsl(209, 33%, 12%);
 }
 
+form {
+    width: 60%;
+    margin: auto;
+    justify-content: space-evenly;
+}
+
 .notify {
-    font-size: 1rem;
-    margin-top: 0.5rem;
-    margin-bottom: 1.5rem;
+    margin: 1rem;
+    font-size: 1.2rem;
     color: hsl(209, 33%, 12%);
 }
 
 ::placeholder {
-    width: auto;
+
     color: hsl(223, 100%, 88%);
-    font-size: 0.6rem;
+    font-size: 1rem;
+}
+
+.inputDiv {
+    width: 60%;
 }
 
 input {
-    width: auto;
+    width: 60%;
     border: 1px solid hsl(223, 100%, 88%);
     border-radius: 10rem;
-    padding: 0.6rem 12rem 0.6rem 1rem;
-
-
+    padding: 1rem 2.5rem;
 }
 
 input:focus {
     outline: transparent;
 }
 
+output {
+    width: 40%;
+
+}
+
+.invalidEmail {
+    border: 1px solid hsl(354, 100%, 66%);
+}
+
+.invalidEmailMessage {
+    text-align: left;
+    font-size: 0.75rem;
+    font-style: italic;
+    color: hsl(354, 100%, 66%);
+}
 
 button {
-    width: auto;
-    margin: 0.5rem;
+    width: 25%;
+    margin: 1rem;
     font-weight: 600;
-    font-size: 0.6rem;
+    font-size: 1rem;
     border-radius: 10rem;
-    padding: 0.6rem 2.5rem;
+    padding: 1rem 2.5rem;
     color: hsl(0, 0%, 100%);
     background-color: hsl(223, 87%, 63%);
     box-shadow: 0 5px 10px hsl(223, 100%, 88%);
@@ -154,6 +177,7 @@ button {
 button:hover {
     background-color: hsl(223, 100%, 88%);
     border: 1px solid hsl(223, 100%, 88%);
+    cursor: pointer;
 }
 
 button:focus {
@@ -163,15 +187,19 @@ button:focus {
 
 
 .illustration {
-    max-width: 850px;
+    max-width: 50%;
     margin: 0 auto;
     padding: 3rem 0;
 }
 
 .social ion-icon {
     width: 12px;
+    height: 12px;
     margin: 0.5rem;
+    padding: 5px;
     color: hsl(223, 87%, 63%);
+    border: 1px solid hsl(0, 0%, 83%);
+    border-radius: 50%;
 }
 
 .copyright {
@@ -212,6 +240,11 @@ button:focus {
     input {
         width: 100%;
         margin-bottom: 10px;
+    }
+
+    .invalidEmailMessage {
+        text-align: center;
+        margin-bottom: 1rem;
     }
 
 
