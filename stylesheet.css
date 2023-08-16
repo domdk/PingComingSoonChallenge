@@ -80,8 +80,10 @@ body {
 
 }
 
+
+
 .container {
-    width: 1240px;
+    width: auto;
     height: fit-content;
     margin: 0 auto;
     text-align: center;
@@ -113,13 +115,14 @@ span {
 }
 
 form {
-    width: 60%;
+    width: 800px;
     margin: auto;
+    display: flex;
     justify-content: space-evenly;
 }
 
 .notify {
-    margin: 1rem;
+    margin-bottom: 1rem;
     font-size: 1.2rem;
     color: hsl(209, 33%, 12%);
 }
@@ -135,7 +138,8 @@ form {
 }
 
 input {
-    width: 60%;
+    width: 100%;
+    margin: auto;
     border: 1px solid hsl(223, 100%, 88%);
     border-radius: 10rem;
     padding: 1rem 2.5rem;
@@ -156,14 +160,20 @@ output {
 
 .invalidEmailMessage {
     text-align: left;
+    margin-left: 2rem;
     font-size: 0.75rem;
     font-style: italic;
     color: hsl(354, 100%, 66%);
 }
 
-button {
+.button {
     width: 25%;
-    margin: 1rem;
+    /* margin: auto; */
+}
+
+button {
+    width: 100%;
+    /* margin: auto; */
     font-weight: 600;
     font-size: 1rem;
     border-radius: 10rem;
@@ -187,7 +197,7 @@ button:focus {
 
 
 .illustration {
-    max-width: 50%;
+    width: 800px;
     margin: 0 auto;
     padding: 3rem 0;
 }
@@ -231,21 +241,61 @@ button:focus {
         font-size: 1.5rem;
     }
 
-    button {
+    .notify {
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+
+    form {
+        width: 300px;
+        flex-direction: column;
+    }
+
+    .button {
         width: 100%;
         margin: 0;
 
     }
 
-    input {
+    button: {
+        font-size: 0.75rem;
+        padding: 0.5rem 0.5rem;
+    }
+
+    .inputDiv {
         width: 100%;
         margin-bottom: 10px;
     }
 
     .invalidEmailMessage {
         text-align: center;
+        margin-left: 0;
         margin-bottom: 1rem;
     }
 
+    .illustration {
+        margin: 0 auto;
+    }
+
+    .social ion-icon {
+        width: 12px;
+        height: 12px;
+        margin: 0.5rem;
+        padding: 5px;
+        /* color: hsl(223, 87%, 63%);
+        border: 1px solid hsl(0, 0%, 83%);
+        border-radius: 50%; */
+    }
+
+    .copyright {
+        font-size: 0.75rem;
+        text-align: center;
+        color: hsl(0, 0%, 59%);
+        padding-bottom: 2rem;
+    }
 
 }
+
+/* * {
+    outline: 1px solid red;
+} */
