@@ -81,7 +81,7 @@ body {
     font-family: 'Libre Franklin', sans-serif;
 }
 
-.container {
+.main {
     width: auto;
     height: fit-content;
     margin: 0 auto;
@@ -226,7 +226,7 @@ button:focus {
 
 @media (max-width: 375px) {
 
-    .container {
+    .main {
         align-items: center;
         margin: 20px;
     }
